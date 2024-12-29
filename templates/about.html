@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1717;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #81C784;
+        }
+
+        h1, h2 {
+            color: #0f0f0f;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        h1.fade-in, h2.fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin: 1rem auto;
+            max-width: 800px;
+        }
+
+        .team {
+            background-color: #ffffff;
+            padding: 3rem 1rem;
+            margin: 2rem 0;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background-color: #f4f4f9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 8px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #1b1a1a;
+            margin-top: 0.5rem;
+        }
+
+        .mission {
+            background-color: #b3b014;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .mission p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        } */
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .team-members {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/membership">Membership Plans</a></li>
+            <li><a href="/registerpage">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="fade-in">About Our Gym</h1>
+    <p class="fade-in">Welcome to Fitness gym, where fitness meets community! We are dedicated to helping you achieve your health and wellness goals with state-of-the-art equipment, expert trainers, and a supportive environment.</p>
+    <p class="fade-in"> Join us to build strength, confidence, and a healthier lifestyle. Your journey to fitness starts here!</p>
+
+    <section class="team fade-in">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="static/boy trainer.jpg" alt="">
+                <h3>Jordan Titan</h3>
+                <p>Head Trainer with 15+ years of experience in diet, yoga and fitness.</p>
+            </div>
+            <div class="team-member">
+                <img src="static/girl.webp" alt="">
+                <h3>Sophia Viper</h3>
+                <p>Sophia Viper is a passionate fitness coach known for her dynamic energy and personalized training programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission fade-in">
+        <h2>Our Mission</h2>
+        <p>Our mission is to inspire and empower individuals to achieve their fitness goals through expert guidance, state-of-the-art facilities, and a supportive community.</p>
+    </section>
+    <!-- <footer>
+        <p style="color: #ffffff;">&copy; 2024 Gym Management | Contact Us: ajk@gym.com</p>
+    </footer> -->
+</body>
+</html>
+
+
+
+
+
